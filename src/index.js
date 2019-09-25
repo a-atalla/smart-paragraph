@@ -1,5 +1,5 @@
 import { DraftailEditor } from 'draftail';
-import { EditorState, convertFromRaw } from 'draft-js';
+import { convertFromRaw } from 'draft-js';
 import { stateToHTML } from 'draft-js-export-html';
 
 const { registerBlockType } = wp.blocks;
@@ -8,7 +8,6 @@ import './style.css';
 import { inlineStyles, blockTypes } from './toolbar-config';
 
 registerBlockType('egcoder/smartparagraph', {
-  // Built-in atrr
   title: 'Smart Paragraph',
   description: 'Gutenberg block to edit smartly',
   icon: 'edit',
@@ -19,8 +18,6 @@ registerBlockType('egcoder/smartparagraph', {
 
   edit({ attributes, setAttributes }) {
     const handleSave = (newContent) => {
-
-      // use setTimeout to throttle the event
       setTimeout(() => {
         setAttributes({ content: JSON.stringify(newContent) });
       }, 500);
