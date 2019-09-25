@@ -1,6 +1,6 @@
 
 # Smart Paragraph
-> This is block is still a work in progress, please don't use in production site
+> This plugin is still a work in progress, please don't use in production site
 
 Gutenberg paragraph block based on [Draftail](https://www.draftail.org/) editor, the main and most important feature is that the editor detect if the language is RTL/LTR and change the direction automatically.
 Notice that you still need to style the content on the site front-end by yourself
