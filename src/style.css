@@ -1,0 +1,11 @@
+@import '../node_modules/draft-js/dist/Draft.css';
+@import '../node_modules/draftail/dist/draftail.css'; 
+
+.Draftail-Editor {
+    border: none;
+}
+
+.Draftail-Editor .Draftail-Toolbar {
+    background-color: #fff;
+    color: #000
+}
