@@ -30,5 +30,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-wp_register_script('script', plugins_url('/build/index.js', __FILE__), ['wp-blocks', 'wp-editor'], true, false);
-register_block_type('egcoder/smartparagraph', array('editor_script' => 'script'));
+function smartp_register_block_script() {
+    wp_register_script('script', plugins_url('/build/index.js', __FILE__), ['wp-blocks', 'wp-editor'], true, false);
+    register_block_type('egcoder/smartparagraph', array('editor_script' => 'script'));
+}
+add_action('admin_init', 'smartp_register_block_script');
