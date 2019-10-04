@@ -6,7 +6,7 @@ Gutenberg paragraph block based on [Draftail](https://www.draftail.org/) editor,
 Notice that you still need to style the content on the site front-end by yourself
 
 ## ScreenShot
-![Smart Paragraph](https://user-images.githubusercontent.com/536140/65572283-ed74ef80-df67-11e9-9389-3ed7e0022dd1.png)
+![Smart Paragraph](https://user-images.githubusercontent.com/536140/66241046-1f0a5b00-e6cc-11e9-8eb8-3cbc44e5d95f.png)
 ## Install
 - install the plugin by copying it to `wp-content/plugins` directory.
 - change into the plugin directory and install the fornend dependencies
