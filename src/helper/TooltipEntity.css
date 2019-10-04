@@ -1,0 +1,13 @@
+.TooltipEntity {
+  cursor: pointer;
+}
+.TooltipEntity__icon {
+  color: #43b1b0;
+  margin-right: 0.2em;
+  width: 1em;
+  height: 1em;
+}
+.TooltipEntity__text {
+  background: #eef8ff;
+  border-bottom: 1px dotted #43b1b0;
+}

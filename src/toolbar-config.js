@@ -1,4 +1,6 @@
 import { BLOCK_TYPE, INLINE_STYLE, ENTITY_TYPE } from 'draftail';
+import Link from './helper/Link';
+import LinkSource from './helper/LinkSource';
 
 export const inlineStyles = [
   { type: INLINE_STYLE.BOLD, icon: <span class="dashicons dashicons-editor-bold"></span> },
@@ -13,4 +15,13 @@ export const blockTypes = [
   { type: BLOCK_TYPE.ORDERED_LIST_ITEM, icon: <span class="dashicons dashicons-editor-ol"></span> },
   { type: BLOCK_TYPE.BLOCKQUOTE, icon: <span class="dashicons dashicons-format-quote"></span>},
 ];
+
+export const entityTypes = [
+  {
+    type: ENTITY_TYPE.LINK,
+    source: LinkSource,
+    decorator: Link,
+    icon: <span class="dashicons dashicons-admin-links"></span>
+  }
+]
 

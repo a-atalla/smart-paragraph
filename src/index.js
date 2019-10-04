@@ -5,7 +5,7 @@ import { stateToHTML } from 'draft-js-export-html';
 const { registerBlockType } = wp.blocks;
 const { RichText } = wp.editor
 import './style.css';
-import { inlineStyles, blockTypes } from './toolbar-config';
+import { inlineStyles, blockTypes, entityTypes } from './toolbar-config';
 
 registerBlockType('egcoder/smartparagraph', {
   title: 'Smart Paragraph',
@@ -29,6 +29,7 @@ registerBlockType('egcoder/smartparagraph', {
         onSave={handleSave}
         blockTypes={blockTypes}
         inlineStyles={inlineStyles}
+        entityTypes={entityTypes}
       />
     );
   },

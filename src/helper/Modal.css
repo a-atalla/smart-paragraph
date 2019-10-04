@@ -1,0 +1,57 @@
+.Modal {
+    position: absolute;
+    left: 50%;
+    top: 45vh;
+    min-width: 320px;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: #fff;
+    animation: modal-in 0.2s cubic-bezier(0.075, 0.82, 0.165, 1) 0s backwards;
+    border-radius: 4px;
+}
+  
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-field__label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.form-field__input {
+    width: 100% !important;
+    border-radius: 4px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #555;
+}
+
+.form-save__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.form-save__btn button {
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: #eee;
+    padding: 8px 32px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
