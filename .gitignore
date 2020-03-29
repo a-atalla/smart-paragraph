@@ -3,7 +3,8 @@
 # Edit at https://www.gitignore.io/?templates=react
 # Build
 build
-
+smart-paragraph
+*.zip
 ### react ###
 .DS_*
 *.log
